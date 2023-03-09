@@ -13,10 +13,19 @@ namespace _1._1.Classes
         {
             this.producer = produser;
         }
+        public Film() {}
         override public void ShowMe()
         {
             base.ShowMe();
             Console.WriteLine($"Продюссер : {producer}");
+        }
+        public override bool DeleteOnProps(string propName, string prop)
+        {
+            if (propName == "Режиссер")
+            {
+                return producer == prop;
+            }
+            else return false;
         }
     }
 }

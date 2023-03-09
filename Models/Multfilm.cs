@@ -1,5 +1,6 @@
 ﻿using _1._1.Classes;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,20 @@ namespace _1._1.Classes
 {
     internal class Multfilm : MediaBasic
     {
-        private Enum type;
+        private Types type;
+        public string Type => type.ToString();
 
         Dictionary<string, Types> stringToTypes = new Dictionary<string, Types>()
         {
             ["Рисованный"] = Types.handDrawn,
             ["Кукольный"] = Types.Puppet,
             ["Пластилиновый"] = Types.plasticine
+        };
+        Dictionary<Types, string> typesToString = new Dictionary<Types, string>()
+        {
+            [Types.handDrawn] = "Рисованный",
+            [Types.Puppet] = "Кукольный",
+            [Types.plasticine] = "Пластилиновый"
         };
         private enum Types
         {
@@ -44,8 +52,24 @@ namespace _1._1.Classes
             else
             {
                 base.ShowMe();
-                Console.WriteLine($"Тип мультфильма : {type.ToString()}");
+                typesToString.TryGetValue(type, out string value);
+                Console.WriteLine($"Тип мультфильма : {value}");
             }
+        }
+
+        public string GetStringType()
+        {
+            return Type;
+        }
+
+        public override bool DeleteOnProps(string propName, string prop)
+        {
+            if (propName == "Тип")
+            {
+                stringToTypes.TryGetValue(prop, out Types value);
+                return this.type == value;
+            }
+            else return false;
         }
     }
 }
