@@ -12,23 +12,40 @@ namespace _1._1.Classes
 {
     internal class Multfilm : MediaBasic
     {
-        private Types type;
-        private enum Types
-        {
-            handDrawn, //рисованный
-            Puppet, //кукольный
-            plasticine, //пластилин
-        }
+        private Enum type;
 
-        Dictionary<string, Types> films = new Dictionary<string, Types>()
+        Dictionary<string, Types> stringToTypes = new Dictionary<string, Types>()
         {
             ["Рисованный"] = Types.handDrawn,
             ["Кукольный"] = Types.Puppet,
             ["Пластилиновый"] = Types.plasticine
         };
+        private enum Types
+        {
+            handDrawn, //рисованный
+            Puppet, //кукольный
+            plasticine, //пластилин
+            NONE
+        }
         public Multfilm(string title, string type) : base(title)
         {
-
+            if(stringToTypes.TryGetValue(type, out Types value))
+            {
+                this.type = value;
+            }
+            else
+            {
+                this.type = Types.NONE;
+            }
+        }
+        override public void ShowMe()
+        {
+            if (this.type.ToString() == "NONE") { }
+            else
+            {
+                base.ShowMe();
+                Console.WriteLine($"Тип мультфильма : {type.ToString()}");
+            }
         }
     }
 }

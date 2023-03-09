@@ -8,7 +8,7 @@ class ReadFileToMedia
 {
     // TODO: Разбить монолит по принципу SRP
     // TODO: Добавлить LINQ, где оно уместно
-    public void CalculateLengthFigures(string path, List<Film> films, List<Multfilm> multfilms, List<Series> series)
+   /* public void CalculateLengthFigures(string path, List<Film> films, List<Multfilm> multfilms, List<Series> series)
     {
         try
         {
@@ -124,5 +124,5 @@ class ReadFileToMedia
         {
             Console.WriteLine("Executing finally block.");
         }
-    }
+    }*/
 }

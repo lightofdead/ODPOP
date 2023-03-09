@@ -13,5 +13,9 @@ namespace _1._1.Classes
         {
             this.title = title;
         }
+        public virtual void ShowMe()
+        {
+            Console.WriteLine($"Название : {title}");
+        }
     }
 }

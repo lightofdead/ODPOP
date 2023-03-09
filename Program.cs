@@ -11,6 +11,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        Film film = new Film("asdasd", "asd");
+        film.ShowMe();
     }
 }
 

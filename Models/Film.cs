@@ -13,5 +13,10 @@ namespace _1._1.Classes
         {
             this.producer = produser;
         }
+        override public void ShowMe()
+        {
+            base.ShowMe();
+            Console.WriteLine($"Продюссер : {producer}");
+        }
     }
 }

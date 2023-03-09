@@ -13,5 +13,10 @@ namespace _1._1.Classes
         {
             this.count = count;
         }
+        override public void ShowMe()
+        {
+            base.ShowMe();
+            Console.WriteLine($"Количество серий : {count}");
+        }
     }
 }
