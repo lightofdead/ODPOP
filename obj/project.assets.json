@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\4 kurs\\2 semestr\\PP\\1.1\\1.1\\1.1.csproj",
+      "projectUniqueName": "D:\\Learning\\4 kurs\\2 semestr\\OSP\\Lab 4\\ODPOP\\1.1.csproj",
       "projectName": "1.1",
-      "projectPath": "D:\\Learning\\4 kurs\\2 semestr\\PP\\1.1\\1.1\\1.1.csproj",
+      "projectPath": "D:\\Learning\\4 kurs\\2 semestr\\OSP\\Lab 4\\ODPOP\\1.1.csproj",
       "packagesPath": "C:\\Users\\buble\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\4 kurs\\2 semestr\\PP\\1.1\\1.1\\obj\\",
+      "outputPath": "D:\\Learning\\4 kurs\\2 semestr\\OSP\\Lab 4\\ODPOP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
