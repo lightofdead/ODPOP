@@ -14,9 +14,18 @@ namespace _1._1.Classes
         {
             this.title = title;
         }
+        public MediaBasic() { }
         public virtual void ShowMe()
         {
             Console.WriteLine($"Название : {title}");
+        }
+        public virtual bool DeleteOnProps(string propName, string prop)
+        {
+            if (propName == "Название")
+            {
+                return title == prop;
+            }
+            else return false;
         }
     }
 }

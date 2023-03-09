@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1._1.Validations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,18 @@ namespace _1._1.Classes
         {
             base.ShowMe();
             Console.WriteLine($"Количество серий : {count}");
+        }
+        public override bool DeleteOnProps(string propName, string prop)
+        {
+            if (propName == "Количество")
+            {
+                if (Validate.CheckValideCountSeries(prop))
+                {
+                    return this.count == Int32.Parse(prop);
+                }
+                else return false;
+            }
+            else return false;
         }
     }
 }

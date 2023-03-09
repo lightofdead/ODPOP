@@ -8,6 +8,7 @@ namespace _1._1.Models
 {
     internal interface MediaInterface
     {
-        void ShowMe() { }
+        abstract void ShowMe();
+        abstract bool DeleteOnProps(string propName, string prop);
     }
 }
