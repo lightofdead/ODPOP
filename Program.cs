@@ -70,7 +70,7 @@ class ReadFile
             while (line != null)
             {
                 var splitString = line.Split(',');
-                if (splitString[0] == "ADD" & splitString.Length == 3)
+                if (splitString[0] == "ADD" && splitString.Length == 3)
                 {
                     bool check = false;
                     if (splitString.Length == 3)
@@ -114,7 +114,7 @@ class ReadFile
                         }
                     }
                 }
-                if (splitString[0] == "REM" & splitString.Length >= 3)
+                if (splitString[0] == "REM" && splitString.Length >= 3)
                 {
                     if (splitString[1] == "Фильм")
                     {
