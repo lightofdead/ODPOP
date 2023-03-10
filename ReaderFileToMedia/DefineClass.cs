@@ -4,7 +4,7 @@ using _1._1.Validations;
 
 namespace _1._1.ReaderFileToMedia
 {
-    internal static class DefineClass
+    public static class DefineClass
     {
         public static MediaInterface GetMediaClass(List<string> props)
         {

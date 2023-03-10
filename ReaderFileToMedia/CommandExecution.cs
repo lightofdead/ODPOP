@@ -3,7 +3,7 @@ using _1._1.Validations;
 
 namespace _1._1.ReaderFileToMedia
 {
-    internal static class CommandExecution
+    public static class CommandExecution
     {
 
         private static List<MediaInterface> medias = new List<MediaInterface>();

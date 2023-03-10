@@ -1,6 +1,6 @@
 ﻿namespace _1._1.Classes
 {
-    internal class Film : MediaBasic
+    public class Film : MediaBasic
     {
         protected string producer;
         public Film(string title, string produser) : base(title)

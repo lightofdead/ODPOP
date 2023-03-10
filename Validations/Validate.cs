@@ -2,7 +2,7 @@
 
 namespace _1._1.Validations
 {
-    internal static class Validate
+    public static class Validate
     {
 
 
