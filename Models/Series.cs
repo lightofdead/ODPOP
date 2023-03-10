@@ -24,7 +24,7 @@ namespace _1._1.Classes
                 }
                 else return false;
             }
-            else return false;
+            else return base.DeleteOnProps(propName, prop); ;
         }
     }
 }
