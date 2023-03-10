@@ -1,8 +1,4 @@
-﻿// This is a personal academic project. Dear PVS-Studio, please check it.
-
-// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
-
-using _1._1.Models;
+﻿using _1._1.Models;
 using _1._1.ReaderFileToMedia;
 using System.Linq;
 

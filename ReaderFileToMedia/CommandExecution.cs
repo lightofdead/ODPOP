@@ -18,15 +18,23 @@ namespace _1._1.ReaderFileToMedia
             medias = medias.Where(e => e != null).ToList();
             if (data.Contains("REM") && Validate.CommandExecutionMediasCountValidate(medias))
             {
+                List<MediaInterface> mediasForDelete = new List<MediaInterface>();
                 data.RemoveAt(0);
                 if (Validate.CommandExecutionDataValidate(data))
+                {
                     foreach (var media in medias)
                     {
                         if (media.DeleteOnProps(Validate.ValideProps(data[0]), Validate.ValideProps(data[1])))
                         {
-                            medias.Remove(media);
+                            mediasForDelete.Add(media);
                         };
                     }
+                    foreach (var media in mediasForDelete)
+                    {
+                        medias.Remove(media);
+                    }
+                }
+                mediasForDelete.Clear();
             }
             if (data.Contains("PRINT") && Validate.CommandExecutionMediasCountValidate(medias))
             {
