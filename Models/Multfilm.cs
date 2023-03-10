@@ -1,6 +1,6 @@
 ﻿namespace _1._1.Classes
 {
-    internal class Multfilm : MediaBasic
+    public class Multfilm : MediaBasic
     {
         private Types type;
         public string Type => type.ToString();

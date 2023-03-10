@@ -1,6 +1,6 @@
 ﻿namespace _1._1.ReaderFileToMedia
 {
-    internal static class ReaderFileToListString
+    public static class ReaderFileToListString
     {
         public static List<string> FileToList(string path)
         {

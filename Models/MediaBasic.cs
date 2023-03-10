@@ -2,7 +2,7 @@
 
 namespace _1._1.Classes
 {
-    internal class MediaBasic : MediaInterface
+    public class MediaBasic : MediaInterface
     {
         protected string title;
         public MediaBasic(string title)
