@@ -1,6 +1,4 @@
-﻿using _1._1.Models;
-using _1._1.ReaderFileToMedia;
-using System.Linq;
+﻿using _1._1.ReaderFileToMedia;
 
 
 class Program
