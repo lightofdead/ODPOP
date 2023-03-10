@@ -58,7 +58,7 @@
                 stringToTypes.TryGetValue(prop, out Types value);
                 return this.type == value;
             }
-            else return false;
+            else return base.DeleteOnProps(propName, prop); ;
         }
     }
 }

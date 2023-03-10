@@ -10,3 +10,6 @@
 *.pdb
 *.v2
 *.2
+*.testlog
+*.manifest
+*.v2

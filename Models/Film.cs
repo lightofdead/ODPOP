@@ -19,7 +19,7 @@
             {
                 return producer == prop;
             }
-            else return false;
+            else return base.DeleteOnProps(propName, prop);
         }
     }
 }
